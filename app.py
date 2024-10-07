@@ -48,7 +48,7 @@ def main():
             st.session_state.questions.append(st.session_state.current_input)
             st.session_state.responses.append(response)
             st.session_state.current_input = ""  # Clear the input field after submission
-            st.experimental_rerun()  # Re-run the script to update the UI
+            st.rerun()  # Re-run the script to update the UI
 
 if __name__ == "__main__":
     main()
